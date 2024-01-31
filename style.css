@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+#container {
+  position: relative;
+}
+
+#machine-container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+#coffee-machine {
+  position: relative;
+  width: 280px;
+  height: 100px;
+  background-color: #4d4d4d;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: transform 1s ease-in-out;
+}
+
+#waterBall {
+  background-color: #3498db;
+  left: 50px;
+  top: -40px;
+}
+
+#coffeeBall {
+  background-color: #a52a2a;
+  left: 100px;
+  top: -40px;
+}
+
+#water, #coffee {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: transform 1s ease-in-out;
+}
+
+#water {
+  background-color: #3498db;
+}
+
+#coffee {
+  background-color: #a52a2a;
+}
+
+#verticalRectangle {
+  position: absolute;
+  width: 150px;
+  height: 250px;
+  background-color: #4d4d4d;
+  border-radius: 5px;
+  left: 140px;
+  z-index: -1;
+}
+
+#button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+
+#readyCoffee {
+  position: absolute;
+  width: 18px;
+  height: 50px;
+  background-color: #A0522D;
+  top: 50%;
+  left: 20%; /* Ajuste a posição para a esquerda */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: transform 1s ease-in-out;
+}
+
